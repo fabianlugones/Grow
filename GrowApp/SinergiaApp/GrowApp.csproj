@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2E565F03-6631-401D-8B41-9AC7E3F3A856}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SinergiaApp</RootNamespace>
+    <AssemblyName>SinergiaApp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caja -transferencias\frmBancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caja -transferencias\frmBancos.Designer.cs">
+      <DependentUpon>frmBancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caja -transferencias\frmTransferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caja -transferencias\frmTransferencias.Designer.cs">
+      <DependentUpon>frmTransferencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra y ventas\frmDetalleVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra y ventas\frmDetalleVenta.Designer.cs">
+      <DependentUpon>frmDetalleVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportarCostos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportarCostos.Designer.cs">
+      <DependentUpon>frmImportarCostos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmBandejaAvisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmBandejaAvisos.Designer.cs">
+      <DependentUpon>frmBandejaAvisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmBarraDeProgreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmBarraDeProgreso.Designer.cs">
+      <DependentUpon>frmBarraDeProgreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caja -transferencias\frmCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caja -transferencias\frmCaja.Designer.cs">
+      <DependentUpon>frmCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmReporteCostosYPorcentajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmReporteCostosYPorcentajes.Designer.cs">
+      <DependentUpon>frmReporteCostosYPorcentajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\frmCajaHerramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\frmCajaHerramientas.Designer.cs">
+      <DependentUpon>frmCajaHerramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra y ventas\frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra y ventas\frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\frmCostosDeReposicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\frmCostosDeReposicion.Designer.cs">
+      <DependentUpon>frmCostosDeReposicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\frmCostosReposicioncs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\frmCostosReposicioncs.Designer.cs">
+      <DependentUpon>frmCostosReposicioncs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra y ventas\frmCuentaCorriente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra y ventas\frmCuentaCorriente.Designer.cs">
+      <DependentUpon>frmCuentaCorriente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caja -transferencias\frmDepositos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caja -transferencias\frmDepositos.Designer.cs">
+      <DependentUpon>frmDepositos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\frmGestionStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\frmGestionStock.Designer.cs">
+      <DependentUpon>frmGestionStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\frmHerramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\frmHerramientas.Designer.cs">
+      <DependentUpon>frmHerramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmImport.Designer.cs">
+      <DependentUpon>frmImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportarDeExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportarDeExcel.designer.cs">
+      <DependentUpon>frmImportarDeExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmMensajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmMensajes.Designer.cs">
+      <DependentUpon>frmMensajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmMenus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmMenus.Designer.cs">
+      <DependentUpon>frmMenus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caja -transferencias\frmMovimientosRegistradora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caja -transferencias\frmMovimientosRegistradora.Designer.cs">
+      <DependentUpon>frmMovimientosRegistradora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra y ventas\frmOrdenDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra y ventas\frmOrdenDeCompra.Designer.cs">
+      <DependentUpon>frmOrdenDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra y ventas\frmOrdenesDeCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra y ventas\frmOrdenesDeCompra.Designer.cs">
+      <DependentUpon>frmOrdenesDeCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmPanelMensajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmPanelMensajes.Designer.cs">
+      <DependentUpon>frmPanelMensajes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra y ventas\frmPedidoCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra y ventas\frmPedidoCotizacion.Designer.cs">
+      <DependentUpon>frmPedidoCotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra y ventas\frmProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra y ventas\frmProveedor.Designer.cs">
+      <DependentUpon>frmProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Caja -transferencias\frmRetiros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Caja -transferencias\frmRetiros.Designer.cs">
+      <DependentUpon>frmRetiros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra y ventas\frmVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra y ventas\frmVenta.Designer.cs">
+      <DependentUpon>frmVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\frmVerCajasHerramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\frmVerCajasHerramientas.Designer.cs">
+      <DependentUpon>frmVerCajasHerramientas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\frmVerComentario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\frmVerComentario.Designer.cs">
+      <DependentUpon>frmVerComentario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra y ventas\frmVerPagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra y ventas\frmVerPagos.Designer.cs">
+      <DependentUpon>frmVerPagos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra y ventas\frmVerPedidosCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra y ventas\frmVerPedidosCotizacion.Designer.cs">
+      <DependentUpon>frmVerPedidosCotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra y ventas\frmVerProveedorescs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra y ventas\frmVerProveedorescs.Designer.cs">
+      <DependentUpon>frmVerProveedorescs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra y ventas\frmVerVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra y ventas\frmVerVentas.Designer.cs">
+      <DependentUpon>frmVerVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\frmVerStockCritico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\frmVerStockCritico.Designer.cs">
+      <DependentUpon>frmVerStockCritico.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Caja -transferencias\frmBancos.resx">
+      <DependentUpon>frmBancos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caja -transferencias\frmTransferencias.resx">
+      <DependentUpon>frmTransferencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra y ventas\frmDetalleVenta.resx">
+      <DependentUpon>frmDetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportarCostos.resx">
+      <DependentUpon>frmImportarCostos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmBandejaAvisos.resx">
+      <DependentUpon>frmBandejaAvisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmBarraDeProgreso.resx">
+      <DependentUpon>frmBarraDeProgreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caja -transferencias\frmCaja.resx">
+      <DependentUpon>frmCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmReporteCostosYPorcentajes.resx">
+      <DependentUpon>frmReporteCostosYPorcentajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\frmCajaHerramientas.resx">
+      <DependentUpon>frmCajaHerramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra y ventas\frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\frmCostosDeReposicion.resx">
+      <DependentUpon>frmCostosDeReposicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\frmCostosReposicioncs.resx">
+      <DependentUpon>frmCostosReposicioncs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra y ventas\frmCuentaCorriente.resx">
+      <DependentUpon>frmCuentaCorriente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caja -transferencias\frmDepositos.resx">
+      <DependentUpon>frmDepositos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\frmGestionStock.resx">
+      <DependentUpon>frmGestionStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\frmHerramientas.resx">
+      <DependentUpon>frmHerramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmImport.resx">
+      <DependentUpon>frmImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportarDeExcel.resx">
+      <DependentUpon>frmImportarDeExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmMensajes.resx">
+      <DependentUpon>frmMensajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmMenus.resx">
+      <DependentUpon>frmMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caja -transferencias\frmMovimientosRegistradora.resx">
+      <DependentUpon>frmMovimientosRegistradora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra y ventas\frmOrdenDeCompra.resx">
+      <DependentUpon>frmOrdenDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra y ventas\frmOrdenesDeCompra.resx">
+      <DependentUpon>frmOrdenesDeCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmPanelMensajes.resx">
+      <DependentUpon>frmPanelMensajes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra y ventas\frmPedidoCotizacion.resx">
+      <DependentUpon>frmPedidoCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra y ventas\frmProveedor.resx">
+      <DependentUpon>frmProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Caja -transferencias\frmRetiros.resx">
+      <DependentUpon>frmRetiros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra y ventas\frmVenta.resx">
+      <DependentUpon>frmVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\frmVerCajasHerramientas.resx">
+      <DependentUpon>frmVerCajasHerramientas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\frmVerComentario.resx">
+      <DependentUpon>frmVerComentario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra y ventas\frmVerPagos.resx">
+      <DependentUpon>frmVerPagos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra y ventas\frmVerPedidosCotizacion.resx">
+      <DependentUpon>frmVerPedidosCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra y ventas\frmVerProveedorescs.resx">
+      <DependentUpon>frmVerProveedorescs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra y ventas\frmVerVentas.resx">
+      <DependentUpon>frmVerVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\frmVerStockCritico.resx">
+      <DependentUpon>frmVerStockCritico.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Clases.GestionHerramientas_Herramientas.datasource" />
+    <None Include="Properties\DataSources\Clases.OrdenDeCompra_Articulo.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Clases\Clases.csproj">
+      <Project>{6A69838C-3D61-4560-926F-219D223E7E5F}</Project>
+      <Name>Clases</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{7F336317-7441-4A1B-85A4-85C8EBB892E7}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Funciones\Funciones.csproj">
+      <Project>{7FDB6235-8FFD-46A4-B95B-64E4BC5D720E}</Project>
+      <Name>Funciones</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

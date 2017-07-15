@@ -1,0 +1,15 @@
+En la venta, darle credito al cliente, segun la forma de pago que elija aplicar un porcentaje de aumento. Esto lo puedo poner en el iba
+La compra falta hacer lo de los pagos en el acto, y administrar los pagos luego de la compra.Cuenta corriente de los proveedores credito y debito.
+
+Consolidar los datos en la caja. tomar los movientos que tienen el concepto CAJA o EFECTIVO,
+
+Back up automatizado.
+
+Que lo de las cajas sea flexible, si por ejemplo se corto la luz y no se pudo cerrar la caja de un dia. que al dia siguiente no le deje abrir otra caja hasta q no se cierre esa.
+Pregutnar si la ultima caja cerrada se puede volver a abrir para realizar alguna modificacion
+
+Porcentaje que varie segun la forma de pago.
+
+que la cuenta corriente se actualice cuando cambie el precio de los articulos.
+
+Quede en que hay que mostrar las deudad en ordenes de compra. podes hacer un pago ahi alguna compra.
